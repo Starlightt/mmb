@@ -1,8 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<cordova>
-    <access origin="https://moviemasalabag.blogspot.in*"/>
-</cordova>
-<widget id="com.olaayo.moviemasalabag" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+
+<widget id="com.example.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>MovieMasalaBag</name>
     <description>
         Movie Masala Bag is a free online movies location.
@@ -117,4 +115,5 @@
     </platform>
     <plugin name="cordova-plugin-dialogs" spec="~1.2.1" />
     <plugin name="cordova-plugin-network-information" spec="~1.2.1" />
+    <access origin="https://moviemasalabag.blogspot.in" subdomains="true" />
 </widget>
