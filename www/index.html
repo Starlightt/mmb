@@ -39,38 +39,30 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>mmb</title>
+    <title>MovieMasalaBag</title>
 </head>
 
 <body>
     <div class="app">
-        <h1>Barik Enterprize</h1>
-        
-        
+        <h1>MovieMasalaBag</h1>
+        <div id="deviceready" class="blink">
+            <p class="event listening">BARIK ENTERPRIZE</p>
+            <p class="event received">Get Ready...</p>
+        </div>
     </div>
-
-
+    <script>
+  function onDeviceReady() {
+    if (navigator.connection.type == Connection.NONE) {
+      navigator.notification.alert('An internet connection is required to continue');
+    } else {
+      window.location="https://moviemasalabag.blogspot.in";
+    }
+  }
+  document.addEventListener("deviceready", onDeviceReady, false);
+</script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
-    function onDeviceReady() {
-    document.removeEventListener('deviceready', onDeviceReady, false);
-
-    // Set AdMobAds options:
-    admob.setOptions({
-        publisherId:          " ca-app-pub-2795428358472042~1387971351",  // Required
-        interstitialAdId:     "ca-app-pub-2795428358472042/8883317996",  // Optional
-        tappxIdiOS:           "/XXXXXXXXX/Pub-XXXX-iOS-IIII",            // Optional
-        tappxIdAndroid:       "/XXXXXXXXX/Pub-XXXX-Android-AAAA",        // Optional
-        tappxShare:           0.5                                        // Optional
-    });
-}
-         document.addEventListener("deviceready", onDeviceReady, false); 
-
-   
-        // Now safe to use the Codova API
-     window.location='https://moviemasalabag.blogspot.com'; 
-    
         app.initialize();
     </script>
 </body>
