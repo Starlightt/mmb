@@ -115,5 +115,5 @@
     </platform>
     <plugin name="cordova-plugin-dialogs" spec="~1.2.1" />
     <plugin name="cordova-plugin-network-information" spec="~1.2.1" />
-    <access origin="https://moviemasalabag.blogspot.in" subdomains="true" />
+   
 </widget>
