@@ -1,7 +1,4 @@
 <?xml version='1.0' encoding='utf-8'?>
-<cordova>
-    <access origin="https://moviemasalabag.blogspot.in*"/>
-</cordova>
 <widget id="com.olaayo.moviemasalabag" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>MovieMasalaBag</name>
     <description>
@@ -117,4 +114,5 @@
     </platform>
     <plugin name="cordova-plugin-dialogs" spec="~1.2.1" />
     <plugin name="cordova-plugin-network-information" spec="~1.2.1" />
+    <plugin name="cordova-admob" spec="~4.1.16" />
 </widget>
